@@ -7,9 +7,9 @@ public class DatePersonale {
     Integer Varsta;
     int cnp;
     int salariu;
-    private String nume;
+    //private String nume;
 
-    public void Personale(String Nume, Integer Varsta, int cnp, int salariu){
+    public void DatePersonale(String Nume, Integer Varsta, int cnp, int salariu){
         this.Nume=Nume;
         this.Varsta=Varsta;
         this.cnp=cnp;
@@ -17,10 +17,10 @@ public class DatePersonale {
     }
 
     public String getNume() {
-        return getNume();
+        return Nume;
     }
 
-    public void setNume(String s) {
+    public void setNume(String nume) {
         Nume = nume;
     }
 
@@ -48,3 +48,4 @@ public class DatePersonale {
         this.salariu = salariu;
     }
 }
+

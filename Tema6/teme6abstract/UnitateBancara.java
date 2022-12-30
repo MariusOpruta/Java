@@ -1,6 +1,8 @@
 package curs6.teme6abstract;
 
-public abstract class UnitateBancara  {
-    public abstract void credit(Integer salariu);
-    public abstract void dobandaCredit(Integer dobanda);
+public interface UnitateBancara {
+    public double calculCredit(DatePersonale datePersonale);
+    public double calculDobanda(DatePersonale datePersonale);
+
+
 }

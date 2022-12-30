@@ -1,5 +1,7 @@
 package curs6.teme6Extend;
 
+import java.util.Scanner;
+
 public class main {
     public static void main(String[] args) {
        Imbracaminte imbracaminte=new Imbracaminte("pantaloni",300.0,10);
@@ -16,6 +18,10 @@ public class main {
         electronice.afiseazaElectronice();
        Electronice electronice1 = new Electronice("Radio",210,1200.99,10);
         electronice1.afiseazaElectronice();
+//        Scanner scanner= new Scanner(System.in);
+//        System.out.println("Numele produsului(imbracaminte): ");
+//        String tipImbracaminte=scanner.nextLine();
+
     }
 }
 

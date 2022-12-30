@@ -11,19 +11,20 @@ public class main {
         System.out.print("Scrie numele: ");
         datePersonale.Nume=scanner.nextLine();
         System.out.print("Varsta: ");
-        datePersonale.Varsta = scanner.nextInt();
+        datePersonale.Varsta=scanner.nextInt();
         System.out.print("cnp: ");
-        datePersonale.cnp = scanner.nextInt();
+        datePersonale.cnp=scanner.nextInt();
         System.out.print("Salar: ");
         datePersonale.salariu = scanner.nextInt();
         if (datePersonale.getVarsta()>40){
             unitateBancara=new BancaPentruNevoiPersonale();
-            unitateBancara.credit(datePersonale.getSalariu()*100);
-            unitateBancara.dobandaCredit(8);
+            unitateBancara.calculCredit(datePersonale);
+            unitateBancara.calculDobanda(datePersonale);
         } else if (datePersonale.getVarsta()>=18 & datePersonale.getVarsta()<=40) {
             unitateBancara=new BancaPentruLocuinte();
-            unitateBancara.credit(datePersonale.getSalariu()*10);
-            unitateBancara.dobandaCredit(5);
+            unitateBancara.calculCredit(datePersonale);
+            unitateBancara.calculDobanda(datePersonale);
+
         }else {
             System.out.println("Persoana nu este eligibila pentru un credit");
         }

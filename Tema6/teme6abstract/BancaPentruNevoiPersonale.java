@@ -1,15 +1,16 @@
 package curs6.teme6abstract;
 
-public class BancaPentruNevoiPersonale extends UnitateBancara{
-    @Override
-    public void credit(Integer salariu) {
-        System.out.println("Creditul este: " + salariu+ " lei ");
+public class BancaPentruNevoiPersonale implements UnitateBancara {
+    public double calculCredit(DatePersonale datePersonale){
+        System.out.println("Salariul Personaei este: "+datePersonale.getSalariu());
+        double creditMaxim = datePersonale.getSalariu()*10;
+        double procentDobanda = creditMaxim * calculDobanda(datePersonale);
+        System.out.println("Valoarea dobanzii este: "+procentDobanda);
+        return creditMaxim+procentDobanda;
     }
 
-    @Override
-    public void dobandaCredit(Integer dobanda) {
-        System.out.println("Dobanda este: " +dobanda+ " % ");
-
+    public double calculDobanda(DatePersonale datePersonale){
+        return 0.08;
     }
 
 
