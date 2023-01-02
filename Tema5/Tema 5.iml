@@ -2,8 +2,8 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/itfactory" isTestSource="false" packagePrefix="com" />
+    <content url="file://$MODULE_DIR$/../Tema 5">
+      <sourceFolder url="file://$MODULE_DIR$/../Tema 5/itfactory" isTestSource="false" packagePrefix="com" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
