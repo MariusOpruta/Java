@@ -6,18 +6,21 @@ import java.util.Random;
 
 public class main {
     public static void main(String[]args) {
-        List Task = new ArrayList();
+        List Task = new ArrayList<>();
         Printer printer = new Printer();
         Insumare insumare = new Insumare();
-//        Random j = new Random(1);
-        double i;
+        Random j = new Random();
+        int i;
+        double k=j.nextDouble();
+        System.out.println(k);
         for(i=0;i<10;i++){
-            if (Math.random() == 0.0){
+            if (k == 0.0){
                 Task.add(printer);
-                System.out.println(Math.random());
-            } else if (Math.random()==1.0) {
+
+            } else if (k==1) {
                 Task.add(insumare);
             }
+
         }
         System.out.println(Task);
     }
