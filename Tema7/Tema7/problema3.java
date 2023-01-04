@@ -1,4 +1,4 @@
-package curs7;
+package Tema7;
 
 import java.util.ArrayList;
 import java.util.List;
