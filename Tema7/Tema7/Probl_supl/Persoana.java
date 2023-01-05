@@ -1,15 +1,20 @@
 package Tema7.Probl_supl;
 
 public class Persoana {
-    private String Nume;
+    private String nume;
     private Integer varsta;
 
+    public Persoana(String nume, Integer varsta) {
+        this.nume = nume;
+        this.varsta = varsta;
+    }
+
     public String getNume() {
-        return Nume;
+        return nume;
     }
 
     public void setNume(String nume) {
-        Nume = nume;
+        this.nume = nume;
     }
 
     public Integer getVarsta() {
@@ -20,16 +25,4 @@ public class Persoana {
         this.varsta = varsta;
     }
 
-    public void Persoana(String Nume, Integer varsta){
-        this.Nume=Nume;
-        this.varsta=varsta;
-
-
-
-
-
-
-
-
-    }
 }
