@@ -2,12 +2,14 @@ package Tema7.Problema5;
 
 public class Printer implements Task{
     String printer;
-    public String Printer(String printer){
-        return printer;
+    public Printer(String printer){
+        this.printer=printer;
+
     }
 
-    public void execute() {
+    public int execute() {
         System.out.println(printer);
 
+        return 0;
     }
 }

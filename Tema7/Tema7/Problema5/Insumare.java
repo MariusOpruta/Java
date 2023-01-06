@@ -1,14 +1,17 @@
 package Tema7.Problema5;
 
 public class Insumare implements Task{
-
-    public int Insumare(int i, int j) {
-        return i+j;
-
+    private int i;
+    private int j;
+    public Insumare(int i, int j) {
+        this.i=i;
+        this.j=j;
     }
 
     @Override
-    public void execute() {
+    public int execute() {
+        System.out.println(this.i+this.j);
 
+        return this.i+this.j;
     }
 }
