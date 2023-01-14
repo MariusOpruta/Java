@@ -17,8 +17,8 @@ public class main {
         Facturi.add(new Factura("123", 2, 150, "ac", "23/11/2022"));
         Facturi.add(new Factura("213", 3, 20, "mar", "23/10/2022"));
         Facturi.add(new Factura("321", 4, 300, "par", "23/09/2022"));
-//        System.out.println(coduriCaen);
-//        System.out.println(Facturi);
+        System.out.println(coduriCaen);
+        System.out.println(Facturi);
 
         Map<PFA, Factura> list = new HashMap<>();
 //        list.put("123",new Factura("123",1, 100, "cui", "23/12/2022"));

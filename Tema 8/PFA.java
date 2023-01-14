@@ -41,7 +41,6 @@ public class PFA {
                 ", coduriCaen=" + coduriCaen +
                 '}';
     }
-
     public String getCui() {
         return cui;
     }
