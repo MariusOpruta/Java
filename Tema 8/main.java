@@ -28,8 +28,8 @@ public class main {
         list.put(new PFA("123", "firma4", "26"), new Factura("123", 4, 300, "par", "20/12/2022"));
         System.out.println(list);
         for (Map.Entry<PFA, Factura> entry : list.entrySet()) {
-            Set<Factura> setFacturi = (Set<Factura>) entry.getValue();
-            System.out.println(setFacturi);
+            Factura setFacturi = entry.getValue();
+            System.out.println(entry);
         }
 //        for (PFA k : Set<Factura>) {
 //            if (list.containsValue("123")) {
