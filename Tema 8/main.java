@@ -19,8 +19,7 @@ public class main {
         Facturi.add(new Factura("321", 4, 300, "par", "23/09/2022"));
         System.out.println(coduriCaen);
         System.out.println(Facturi);
-
-        Map<PFA, Factura> list = new HashMap<>();
+       Map<PFA, Factura> list = new HashMap<>();
 //        list.put("123",new Factura("123",1, 100, "cui", "23/12/2022"));
 //        list.put("321",new Factura("321",4, 300, "cui", "23/12/2022"));
         list.put(new PFA("123", "firma1", "23"), new Factura("123", 1, 100, "cui", "23/12/2022"));
@@ -28,13 +27,17 @@ public class main {
         list.put(new PFA("321", "firma3", "23"), new Factura("123", 3, 20, "mar", "23/10/2022"));
         list.put(new PFA("123", "firma4", "26"), new Factura("123", 4, 300, "par", "20/12/2022"));
         System.out.println(list);
-        for (PFA k : Facturi) {
-            if (list.containsValue("123")) {
-                System.out.println(list);
-            }
+        for (Map.Entry<PFA, Factura> entry : list.entrySet()) {
+            Set<Factura> setFacturi = (Set<Factura>) entry.getValue();
+            System.out.println(setFacturi);
+        }
+//        for (PFA k : Set<Factura>) {
+//            if (list.containsValue("123")) {
+//                System.out.println(list);
+//            }
 
 
         }
     }
-}
+
 
