@@ -1,0 +1,29 @@
+Ca si tema va rog sa va uitati peste aceasta problema: Sa se creeze o mica aplicatie de gestiunea facturilor unei persoane fizice autorizate. 
+- Se va crea clasa Factura care ca contine cel putin 3 fielduri - data (folositi string), valoare totala, denumire serviciu, denumire beneficiarul lucrarii. 
+- Se va crea clasa PFA care va contine urmatoarele fiedluri - CUI, nume si un Set cu coduri CAEN:
+public class PFA {
+    private String cui;
+    private String denumire;
+    private Set<String> coduriCaen;
+}
+
+In PFA sa se foloseasca constructorul cu parametrii pentru a adauga entitati
+In PFA sa se creeze o metoda toString in care se afiseaza datele unei PFA intr-un mod citibil
+In PFA sa se genereze setters & getters pentru fielduri, logica in cazul codurilor caen este urmatoarea: sa se scrie metode prin care putem adauga, sterge, cauta coduri caen in lista pentru un pfa. 
+
+Se va crea clasa Factura in care vom avea urmatoarele fielduri - nrFactura, valoareFaraTVA, denumireServiciuPrestat, data si un obiect de tip PFA
+Se vor crea in clasa Main mai multe obiecte de tip PFA si mai multe obiecte de tip Factura (sa incercati sa aveti pentru un pfa macar 2-3 facturi)
+Tot in Main se vor face si urmatoarele cerinte:
+Se va crea o lista, fie ArrayList fie HashSet, care va cuprinde mai multe facturi, toate apartinand unui singur PFA
+Se va crea un HashMap in care cheia va fi obiect de tip PFA iar valoarea obiect de tip Set sau List de facturi, depinde ce ati folosit la pasul anterior
+Se vor adauga toate obiectele de tip pfa cu listele de facturi
+Se va interoga hashmapul pentru a afla toate facturile asociate unui pfa
+Se va itera peste hashmap folosind ceva in genul acetsa:
+for (Map.Entry<PFA, Set> entry : mapPFAsiFacturi.entrySet()) {
+      Set<Factura> setFacturi = entry.getValue();
+
+      // aici va rog sa parcurgeti si setul si adunati pentru fiecare PFA valoarea totala pe care au de incasat de pe facturile lor
+}
+
+
+Va rog sa tineti cont de metoda equals, toString, constructori cu parametri si getters & setters
