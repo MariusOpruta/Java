@@ -8,7 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Tema4" isTestSource="false" packagePrefix="Curs4" />
       <sourceFolder url="file://$MODULE_DIR$/Tema6" isTestSource="false" packagePrefix="curs6" />
       <sourceFolder url="file://$MODULE_DIR$/Tema7" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Tema 8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tema 8" isTestSource="false" packagePrefix="curs8" />
       <sourceFolder url="file://$MODULE_DIR$/Tema9" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/teste1" isTestSource="false" />
     </content>

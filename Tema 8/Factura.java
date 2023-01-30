@@ -1,3 +1,5 @@
+package curs8;
+
 import java.util.Objects;
 
 public class Factura {
@@ -6,16 +8,23 @@ public class Factura {
     String denumireServiciuPrestat;
     String data;
 
-    String cui;
+    PFA cui;
 
 
-    public Factura(String cui, int nrFactura, int valoareFaraTVA, String denumireServiciuPrestat, String data) {
+    public Factura(PFA cui, int nrFactura, int valoareFaraTVA, String denumireServiciuPrestat, String data) {
         this.nrFactura = nrFactura;
         this.valoareFaraTVA = valoareFaraTVA;
         this.denumireServiciuPrestat = denumireServiciuPrestat;
         this.data = data;
         this.cui = cui;
 
+    }
+
+    public Factura(int i, int nrFactura, int valoareFaraTVA, String apa_plata, String data) {
+        this.nrFactura = nrFactura;
+        this.valoareFaraTVA = valoareFaraTVA;
+        this.denumireServiciuPrestat = denumireServiciuPrestat;
+        this.data = data;
     }
 
     public String toString() {
@@ -73,11 +82,11 @@ public class Factura {
         this.data = data;
     }
 
-    public String getCui() {
+    public PFA getCui() {
         return cui;
     }
 
-    public void setCui(String cui) {
+    public void setCui(PFA cui) {
         this.cui = cui;
     }
 }

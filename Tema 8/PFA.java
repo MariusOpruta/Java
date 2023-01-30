@@ -1,4 +1,4 @@
-
+package curs8;
 
 import java.util.Objects;
 import java.util.Set;
