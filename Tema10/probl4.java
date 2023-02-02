@@ -16,6 +16,5 @@ public class probl4 {
         } catch (IOException e) {
             System.out.println("Nu se gaseste fisierul!");
         }
-
     }
 }
