@@ -10,7 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Tema7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tema 8" isTestSource="false" packagePrefix="curs8" />
       <sourceFolder url="file://$MODULE_DIR$/Tema9" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/teste1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tema10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/probl1" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
